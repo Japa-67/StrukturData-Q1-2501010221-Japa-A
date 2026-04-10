@@ -6,7 +6,7 @@
 Berbeda dengan Singly Linked List, data disimpan di memori yang tidak berurutan (non-kontinu). Setiap data berada dalam sebuah node yang terhubung dengan pointer ke node berikutnya. Jika ingin mengakses elemen tertentu, kita harus mulai dari node pertama (head) lalu mengikuti pointer sampai menemukan elemen yang dicari.
 Karena harus melewati node satu per satu, waktu yang dibutuhkan menjadi linear atau O(n).
 
-Jadi kesimpulannya, Array lebih cepat dalam akses data karena memori yang berurutan, sedangkan Linked List membutuhkan penelusuran node karena memori tidak berurutan. <br>
+Jadi kesimpulannya, Array lebih cepat dalam akses data karena memori yang berurutan, sedangkan Linked List membutuhkan penelusuran node karena memori tidak berurutan. <hr>
 
 2. Analisis Efisiensi Operasi Manipulasi
    
@@ -19,14 +19,14 @@ Sedangkan pada Linked List, proses penyisipan atau penghapusan cukup dengan meng
 - Ukuran struktur data bisa berubah secara dinamis.
 - Operasi manipulasi hanya melibatkan perubahan pointer antar node.
   
-Karena itu, Linked List lebih cocok digunakan pada kondisi di mana data sering ditambah atau dihapus, terutama di bagian tengah struktur data. <br>
+Karena itu, Linked List lebih cocok digunakan pada kondisi di mana data sering ditambah atau dihapus, terutama di bagian tengah struktur data. <hr>
 
 3. Konsep Doubly Linked List
 
   Pada Doubly Linked List, setiap node memiliki tiga bagian utama yaitu prev, data, dan next. Bagian data digunakan untuk menyimpan nilai atau informasi yang ada di dalam node tersebut. Kemudian prev adalah pointer yang menunjuk ke node sebelumnya, sedangkan next adalah pointer yang menunjuk ke node berikutnya. Dengan adanya dua pointer ini, setiap node mengetahui posisi node sebelum dan sesudahnya di dalam linked list.
 Berbeda dengan Singly Linked List yang hanya memiliki satu pointer yaitu next, Doubly Linked List memiliki pointer tambahan yaitu prev. Keberadaan pointer tambahan ini membuat penggunaan memori menjadi lebih besar karena setiap node harus menyimpan dua alamat pointer sekaligus. Jadi secara penggunaan memori, Doubly Linked List lebih boros dibandingkan Singly Linked List. 
 
-  Namun, pointer tambahan tersebut memberikan kelebihan dalam hal fleksibilitas penelusuran data. Pada Doubly Linked List kita bisa melakukan traversal atau penelusuran ke dua arah, yaitu dari depan ke belakang menggunakan pointer next, dan dari belakang ke depan menggunakan pointer prev. Hal ini membuat beberapa operasi menjadi lebih mudah dilakukan, misalnya ketika ingin kembali ke node sebelumnya tanpa harus memulai lagi dari node pertama. Jadi meskipun membutuhkan memori lebih banyak, Doubly Linked List lebih fleksibel dalam proses navigasi dan manipulasi data dibandingkan Singly Linked List. <br>
+  Namun, pointer tambahan tersebut memberikan kelebihan dalam hal fleksibilitas penelusuran data. Pada Doubly Linked List kita bisa melakukan traversal atau penelusuran ke dua arah, yaitu dari depan ke belakang menggunakan pointer next, dan dari belakang ke depan menggunakan pointer prev. Hal ini membuat beberapa operasi menjadi lebih mudah dilakukan, misalnya ketika ingin kembali ke node sebelumnya tanpa harus memulai lagi dari node pertama. Jadi meskipun membutuhkan memori lebih banyak, Doubly Linked List lebih fleksibel dalam proses navigasi dan manipulasi data dibandingkan Singly Linked List. <hr>
 
 4. Mekanisme Circular Linked List
 
@@ -34,7 +34,7 @@ Berbeda dengan Singly Linked List yang hanya memiliki satu pointer yaitu next, D
   
   Secara teoritis, struktur melingkar ini membuat semua node saling terhubung dalam satu siklus sehingga tidak ada node yang benar-benar menjadi akhir dari list. Hal ini membuat perpindahan dari node terakhir ke node pertama menjadi lebih mudah karena tidak perlu kembali secara manual ke awal list.
   
-  Salah satu contoh penggunaan Circular Linked List adalah pada algoritma Round Robin Scheduling dalam sistem operasi. Pada sistem ini, beberapa proses akan mendapatkan giliran menggunakan CPU secara bergantian. Setelah proses terakhir selesai menjalankan bagiannya, sistem akan kembali lagi ke proses pertama dan siklus tersebut terus berulang. Struktur Circular Linked List cocok digunakan pada kondisi seperti ini karena alur datanya bersifat berulang atau siklus. <br>
+  Salah satu contoh penggunaan Circular Linked List adalah pada algoritma Round Robin Scheduling dalam sistem operasi. Pada sistem ini, beberapa proses akan mendapatkan giliran menggunakan CPU secara bergantian. Setelah proses terakhir selesai menjalankan bagiannya, sistem akan kembali lagi ke proses pertama dan siklus tersebut terus berulang. Struktur Circular Linked List cocok digunakan pada kondisi seperti ini karena alur datanya bersifat berulang atau siklus. <hr>
 
 5. Array Dinamis di Python
 
